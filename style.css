@@ -1,0 +1,129 @@
+:root {
+  font-size: 18px;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Outfit', sans-serif;
+}
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  background-color: hsl(217, 54%, 11%);
+}
+.card {
+  max-width: 20vw;
+  height: 69vh;
+  margin: auto;
+  border-radius: 10px;
+  padding: 0 20px;
+  background-color: hsl(216, 50%, 16%);
+}
+.image-content {
+  width: 100%;
+  height: 50%;
+}
+.image-background {
+  width: 100%;
+  height: 100%;
+  background: url(images/image-equilibrium.jpg);
+  background-size: cover;
+  background-position: center;
+  border-radius: 8px;
+  margin-top: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.image-content img {
+  display: none;
+}
+.image-content:hover .overlay{
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  background-color: hsl(178, 100%, 50%);
+  border-radius: 8px;
+  opacity: .5;
+}
+.image-content:hover .image-background img {
+  position: absolute;
+  display: block;
+  z-index: 1;
+}
+
+.info h4 {
+  margin-top: 1em;
+  color: hsl(0, 0%, 100%);
+  font-weight: 600;
+  font-size: .9rem;
+}
+.info h4:hover {
+  color: hsl(178, 100%, 50%);
+  cursor: pointer;
+}
+.info p {
+  color: hsl(215, 51%, 70%);
+  margin-top: 1em;
+  font-weight: 300;
+  font-size: .75rem;
+  line-height: 1.5em;
+}
+
+.value-time {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  
+}
+.value-time .value {
+  display: flex;
+  font-size: .67rem;
+  align-items: center;
+}
+.value-time img {
+  height: 1.1em;
+  margin-right: .5em;
+}
+.value p {
+  color: hsl(178, 100%, 50%);
+}
+.value-time .time {
+  display: flex;
+  font-size: .67rem;
+  align-items: center;
+}
+.time p {
+  color: hsl(215, 51%, 70%);
+}
+
+hr {
+  border: 1px solid hsl(215, 32%, 27%);
+}
+
+.profile-content {
+  display: flex;
+  align-items: center;
+  margin-top: .8em;
+}
+.profile-content img {
+  width: 12%;
+  height: 12%;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  margin-right: 1em;
+}
+.profile-content p {
+  color: hsl(215, 51%, 70%);
+  font-size: .7rem;
+}
+.profile-content p span {
+  color: hsl(0, 0%, 100%);
+}
+.profile-content p span:hover {
+  color: hsl(178, 100%, 50%);
+  cursor: pointer;
+}
